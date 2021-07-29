@@ -14,4 +14,9 @@
     border: 1px solid black;
     height: var(--squaresize);
     width: var(--squaresize);
+
+}
+
+.gridsquare:hover {
+    background-color: aqua;
 }
