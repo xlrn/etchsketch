@@ -16,7 +16,3 @@
     width: var(--squaresize);
 
 }
-
-.gridsquare:hover {
-    background-color: aqua;
-}
