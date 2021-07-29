@@ -1,0 +1,17 @@
+:root {
+    --squaresize: 30px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, var(--squaresize));
+    grid-template-rows: repeat(16, var(--squaresize));
+    column-gap: 6px;
+    row-gap: 6px;
+}
+
+.gridsquare {
+    border: 1px solid black;
+    height: var(--squaresize);
+    width: var(--squaresize);
+}
