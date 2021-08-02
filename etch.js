@@ -23,12 +23,10 @@ function generateGrid(squares = 16) {
 
     divs.forEach(function(e) {
         e.addEventListener('mouseover', function() {
-            e.style.backgroundColor = 'aqua';
+            e.style.backgroundColor = generateRGB();
         });
     });
-
 }
-
 
 function resetGrid () {
     let input = prompt('Enter length of grid.', 16);
@@ -40,6 +38,15 @@ function resetGrid () {
 
         generateGrid(input);
     }
+}
+
+function generateRGB() {
+    let h = Math.floor(Math.random() * 361);
+    let s = '100%'
+    let l = '50%'
+    let rgb = `hsl(${h}, ${s}, ${l})`;
+    console.log(rgb);
+    return rgb;
 }
 
 window.onload = function() {
